@@ -1,11 +1,12 @@
-package huedes.unraid.unraid_cleanarr.ui.theme
+package huedes.unraid.unraid_cleanarr.ui.theme // Passe dies an dein Package an
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+// "Cyberpunk Night" Palette
+val DarkGreyBackground = Color(0xFF121212) // Primärer Hintergrund
+val LightGreySurface = Color(0xFF1E1E1E)   // Sekundärer Hintergrund (für Karten)
+val NeonCyan = Color(0xFF00E5FF)           // Primäre Akzentfarbe
+val NeonMagenta = Color(0xFFFF00FF)         // Sekundäre Akzentfarbe
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+val PrimaryText = Color(0xFFE0E0E0)        // Standardtext
+val SecondaryText = Color(0xFFA0A0A0)      // Sekundärtext/Hinweise
