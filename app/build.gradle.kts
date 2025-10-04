@@ -32,6 +32,7 @@ android {
         // Definiere die Build-Felder und weise ihnen die Werte aus der Properties-Datei zu
         val serverIp = localProperties.getProperty("UNRAID_SERVER_IP", "").replace("\"", "\\\"")
         buildConfigField("String", "SERVER_IP", "\"$serverIp\"")
+        buildConfigField("String", "REMOTE_URL", "\"${localProperties.getProperty("UNRAID_REMOTE_URL")}\"")
 
         val apiKey = localProperties.getProperty("UNRAID_API_KEY", "").replace("\"", "\\\"")
         buildConfigField("String", "API_KEY", "\"$apiKey\"")
@@ -83,5 +84,6 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+    implementation("androidx.activity:activity-ktx:1.9.0")
 }
 
